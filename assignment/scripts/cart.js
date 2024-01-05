@@ -33,8 +33,15 @@ console.log('Expecting: bananas, strawberries, blueberries:', listItems ());
 
 
 
+function empty () {
+    for (let i = basket.length; i > -1; i--){
+        basket.pop();
+    }
+        return basket;
 
+}
 
+console.log('Expecting an empty array', empty());
 
 
 // DO NOT MODIFY
