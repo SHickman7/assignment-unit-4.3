@@ -12,7 +12,7 @@ function addItem ( item ){
 
 
 console.log(`Basket is ${basket}`);
-console.log( 'Adding bananas (expect true)', addItem('bananas'));
+// console.log( 'Adding bananas (expect true)', addItem('bananas'));
 console.log( `Basket is now ${basket}`);
 
 function listItems () {
@@ -43,15 +43,36 @@ function empty () {
 
 console.log('Expecting an empty array', empty());
 
+//Stretch Goals
+
+// Add a global const named maxItems and set it to 5.
 
 const maxItems = 5;
+
+
+//Create a function called isFull(). It should:
+    // return false if the basket contains less than max number of items
+    // return true otherwise (equal or more than maxItems)
 
 function isFull (){
     if (basket.length < maxItems){
     return false;
 }   return true;
 }
-    console.log ('Current status of is basket full', isFull());
+console.log ('Current status of is basket full', isFull());
+
+// updating the required addItem function per stretch goals instructions
+
+    // function addItem ( item ){
+    //     console.log ( 'In addItem', item);
+    //     if (isFull() === false){
+    //     basket.push(item)}
+    //     return true;
+
+    // } return false
+
+    // console.log('The basket currently consists of:', basket);
+
 
 // DO NOT MODIFY
 // Used for automated testing
