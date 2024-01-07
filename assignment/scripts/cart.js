@@ -44,6 +44,18 @@ function empty () {
 console.log('Expecting an empty array', empty());
 
 
+const maxItems = 5;
+
+function isFull () {
+    if (basket.length < maxItems)
+    return false;
+} return true;
+
+console.log ('The basket is currently full', isFull();
+
+
+
+
 // DO NOT MODIFY
 // Used for automated testing
 try {
